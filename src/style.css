@@ -1,0 +1,68 @@
+.App {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.paper {
+    margin: 40px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    margin: 10px;
+    background-color: rgb(220 0 78)!important;
+}
+
+.form_container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form {
+    text-align: left;
+    width: 600px;
+    height: 800px;
+    margin: 30px;
+}
+
+.blank {
+    height: 15px;
+}
+
+.bar_root {
+    flex-grow: 1;
+}
+
+.bar_menu_button {
+    margin-right: 20px;
+}
+
+.bar_title {
+    flex-grow: 1;
+    color: white;
+}
+
+.tb_container {
+    margin: 30px 15%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.orange {
+    color: #F6CD7B!important;
+}
+
+.grow {
+    flex-grow: 1;
+}
