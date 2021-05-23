@@ -4,7 +4,7 @@ import axios from "axios";
 let apiBaseUrl =  "http://api.gsxxm.com";
 
 // let config = { withCredentials: true, crossdomain: true };
-let config = { };
+let config = { withCredentials: true };
 
 export function regist(payload) {
     return axios.post(apiBaseUrl+'/register', payload, config)
