@@ -1,5 +1,5 @@
-import React, {Component, useState, useReducer} from 'react';
-import {Redirect, Route, withRouter} from 'react-router-dom'
+import React from 'react';
+import {Redirect, Route} from 'react-router-dom'
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -18,7 +18,7 @@ export function App() {
                 <Route path='/register' component={Register}/>
                 <Route exact path='/posts' component={Home}/>
                 <Route path='/posts/:id' component={PostForm}/>
-                <Route exact path='/posts/new' component={PostNew}/>
+                <Route exact path='/post/new' component={PostNew}/>
                 <Redirect to='/login'/>
             </div>
         </UserProvider>
@@ -26,4 +26,4 @@ export function App() {
     );
 }
 
-export default {App};
+export default App;

@@ -4,7 +4,7 @@ import StickyHeadTable from "./PostTable";
 function Home() {
     return (
         <div className="tb_container">
-            <h3>文章列表</h3>
+            <h3>Articles</h3>
             <StickyHeadTable/>
         </div>
     );

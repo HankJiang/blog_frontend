@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useHistory} from "react-router-dom";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Grid from "@material-ui/core/Grid";
@@ -8,9 +9,7 @@ import TextField from "@material-ui/core/TextField";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
 import {login} from '../requests/BlogRequests';
-import {useHistory} from "react-router-dom";
 import {useUser} from "../context/userContex";
-
 
 function Login() {
     const history = useHistory();

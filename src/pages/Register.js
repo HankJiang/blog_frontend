@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
@@ -17,7 +17,6 @@ function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirm_password, setConfirmPassword] = useState('');
-
 
     function handleClick() {
         if (confirm_password !== password) {

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {useHistory} from "react-router";
 import {fade, makeStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
@@ -10,11 +11,10 @@ import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Button from "@material-ui/core/Button";
-import {useHistory} from "react-router";
-import {deletePost, getPosts} from '../requests/BlogRequests'
 import Toolbar from "@material-ui/core/Toolbar";
 import SearchIcon from "@material-ui/icons/Search";
 import InputBase from "@material-ui/core/InputBase";
+import {deletePost, getPosts} from '../requests/BlogRequests'
 
 const columns = [
     {id: 'title', label: 'Title', minWidth: 120},
@@ -140,7 +140,7 @@ export default function StickyHeadTable() {
                 </div>
                 <div className="grow" />
                 <div>
-                    <Button color="primary" onClick={() => history.push('/posts/new')}>New</Button>
+                    <Button color="primary" onClick={() => history.push('/post/new')}>New</Button>
                 </div>
             </Toolbar>
             <TableContainer className={classes.container}>
