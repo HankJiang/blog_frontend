@@ -1,6 +1,8 @@
 import axios from "axios";
 
-let apiBaseUrl = process.env.NODE_ENV !== 'production' ? "http://localhost:3000" : process.env.BACKEND_URL
+// let apiBaseUrl = process.env.NODE_ENV !== 'production' ? "http://localhost:3000" : process.env.BACKEND_URL
+let apiBaseUrl =  "http://api.gsxxm.com";
+
 let config = { withCredentials: true, crossdomain: true };
 
 export function regist(payload) {
